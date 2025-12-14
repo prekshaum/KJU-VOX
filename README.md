@@ -418,10 +418,9 @@ This project is licensed under the **MIT License** - see [LICENSE](LICENSE) for 
 
 **Need help?**
 
-[![Email](https://img.shields.io/badge/Email-support@kjcvox.com-red?style=for-the-badge&logo=gmail)](mailto:support@kjcvox.com)
-[![Issues](https://img.shields.io/badge/GitHub-Issues-black?style=for-the-badge&logo=github)](https://github.com/yourusername/kjc-vox/issues)
-[![Docs](https://img.shields.io/badge/Documentation-Wiki-blue?style=for-the-badge&logo=gitbook)](https://github.com/yourusername/kjc-vox/wiki)
-
+[![Email](https://img.shields.io/badge/Email-support@kjcvox.com-red?style=for-the-badge&logo=gmail)](mailto:23bclb46@kristujayanti.com)
+[![Issues](https://img.shields.io/badge/GitHub-Issues-black?style=for-the-badge&logo=github)](https://github.com/prekshaum/KJU-VOX/issues)
+[![Docs](https://img.shields.io/badge/Documentation-Wiki-blue?style=for-the-badge&logo=gitbook)](https://github.com/prekshaum)
 ---
 
 ### 🎓 Developed at Kristu Jayanti College
