@@ -802,7 +802,8 @@ kjc-vox/
 # OUTPUT SCREENSHOTS
 ## Admin Dashboards
 <img width="1908" height="816" alt="Screenshot 2025-12-11 231324" src="https://github.com/user-attachments/assets/2ab80e25-9084-42a7-9d0b-a9328789b8d7" />
-## Course Assigned Subjects
+
+## Course and Subjects Assigned
 
 <img width="1903" height="832" alt="Screenshot 2025-12-11 231204" src="https://github.com/user-attachments/assets/27c521ab-b922-4b25-bf61-5ffb2cf8a8fc" />
 
