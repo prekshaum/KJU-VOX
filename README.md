@@ -171,7 +171,392 @@ graph LR
 
 ---
 
-## ⚡ Quick Start
+## 📋 Technical Requirements
+
+<div align="center">
+
+![Requirements](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=1000&color=FF6B6B&center=true&vCenter=true&width=600&lines=Everything+You+Need+to+Get+Started)
+
+</div>
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+### 💻 **Software**
+
+<img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="80" />
+
+```bash
+✓ Node.js 18+
+✓ Java 11+
+✓ Maven 3.x
+✓ Angular CLI
+✓ Git 2.x
+```
+
+![Node](https://img.shields.io/badge/Node.js-18+-339933?style=flat-square&logo=nodedotjs)
+![Java](https://img.shields.io/badge/Java-11+-ED8B00?style=flat-square&logo=openjdk)
+![Maven](https://img.shields.io/badge/Maven-3.x-C71A36?style=flat-square&logo=apachemaven)
+
+</td>
+<td width="33%" align="center">
+
+### ☁️ **Cloud Services**
+
+<img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="80" />
+
+```yaml
+Required:
+  - MongoDB Atlas
+  - Google Cloud (Gemini)
+  - SMTP Server
+  - Domain (optional)
+```
+
+![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-4EA94B?style=flat-square&logo=mongodb)
+![Google](https://img.shields.io/badge/Google-Cloud-4285F4?style=flat-square&logo=googlecloud)
+![Email](https://img.shields.io/badge/SMTP-Required-EA4335?style=flat-square&logo=gmail)
+
+</td>
+<td width="33%" align="center">
+
+### 🔑 **API Keys**
+
+<img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7ed2.gif" width="80" />
+
+```json
+{
+  "mongodb": "Connection URI",
+  "gemini": "API Key",
+  "jwt": "Secret Key",
+  "email": "App Password"
+}
+```
+
+![Keys](https://img.shields.io/badge/Keys-4_Required-FFD700?style=flat-square&logo=key)
+![Security](https://img.shields.io/badge/Security-Critical-FF0000?style=flat-square&logo=security)
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+### 🎯 **System Requirements**
+
+| Component | Minimum | Recommended | Notes |
+|:---:|:---:|:---:|:---:|
+| **RAM** | 4 GB | 8 GB | For smooth development |
+| **Storage** | 2 GB | 5 GB | Including dependencies |
+| **CPU** | 2 cores | 4 cores | For faster builds |
+| **Network** | 5 Mbps | 10+ Mbps | For cloud services |
+
+</div>
+
+---
+
+## 🏗️ High-Level System Design
+
+<div align="center">
+
+![Architecture](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&width=600&lines=Enterprise-Grade+Architecture)
+
+</div>
+
+### 🎯 **Architecture Overview**
+
+```mermaid
+flowchart TB
+    subgraph Client[Client Layer]
+        A[User Interface<br/>HTML/CSS/JS]
+    end
+    
+    subgraph API[API Layer]
+        B[Spring Boot REST API<br/>CORS Enabled]
+    end
+    
+    subgraph Processing[Document Processing Pipeline]
+        C[Feedback Form<br/>Star Ratings]
+        D[Client Validation<br/>Required Fields]
+        E[Data Transformation<br/>JSON Format]
+        F[AI Validation Layer<br/>Gemini API<br/>Content Filtering]
+    end
+    
+    subgraph Database[Vector Database]
+        G[(MongoDB Atlas<br/>Cloud Storage)]
+    end
+    
+    subgraph Query[Query Processing]
+        H[Semantic Search<br/>Faculty Analytics]
+        I[Context Assembly<br/>Aggregation]
+        J[Data Processing<br/>Statistics Engine]
+    end
+    
+    subgraph Response[Response Generation]
+        K[Dashboard View<br/>Charts & Metrics]
+    end
+    
+    A -->|Submit Feedback| B
+    A -->|View Analytics| B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F -->|Store Anonymous Data| G
+    B -->|Fetch Analytics| H
+    G -->|Retrieve| H
+    H --> I
+    I --> J
+    J --> K
+    K --> A
+    
+    style A fill:#00D4FF,stroke:#0099CC,stroke-width:3px
+    style B fill:#FF6B6B,stroke:#CC5555,stroke-width:3px
+    style G fill:#FFD700,stroke:#CCB000,stroke-width:3px
+    style F fill:#9B59B6,stroke:#7D3C98,stroke-width:3px
+    style K fill:#2ECC71,stroke:#27AE60,stroke-width:3px
+```
+
+---
+
+### 🔄 **Data Flow Architecture**
+
+<table>
+<tr>
+<td width="50%" align="center">
+
+#### 📥 **Input Flow**
+
+```mermaid
+graph TD
+    A[Student Login] --> B{Authentication}
+    B -->|Success| C[Dashboard Access]
+    B -->|Fail| A
+    C --> D[Select Subject]
+    D --> E[Fill Feedback Form]
+    E --> F[Client Validation]
+    F -->|Valid| G[Submit to API]
+    F -->|Invalid| E
+    G --> H[AI Validation]
+    H -->|Approved| I[Save to DB]
+    H -->|Rejected| J[Show Suggestions]
+    J --> E
+    I --> K[Success Message]
+    
+    style H fill:#9B59B6,stroke:#7D3C98,stroke-width:2px
+    style I fill:#2ECC71,stroke:#27AE60,stroke-width:2px
+```
+
+</td>
+<td width="50%" align="center">
+
+#### 📤 **Output Flow**
+
+```mermaid
+graph TD
+    A[Faculty Login] --> B{Authentication}
+    B -->|Success| C[Dashboard Access]
+    B -->|Fail| A
+    C --> D[Select Filters]
+    D --> E[Query Database]
+    E --> F[Aggregate Data]
+    F --> G[Calculate Metrics]
+    G --> H[Generate Charts]
+    H --> I[Display Dashboard]
+    I --> J{Action}
+    J -->|Export| K[Download Report]
+    J -->|Refresh| D
+    
+    style E fill:#FFD700,stroke:#CCB000,stroke-width:2px
+    style H fill:#00D4FF,stroke:#0099CC,stroke-width:2px
+```
+
+</td>
+</tr>
+</table>
+
+---
+
+### 🧩 **Component Architecture**
+
+<div align="center">
+
+| Layer | Components | Responsibility | Technology |
+|:---:|:---|:---|:---:|
+| **Presentation** | Angular Components, Services, Guards | User Interface & Interaction | ![Angular](https://img.shields.io/badge/-Angular-DD0031?style=flat-square&logo=angular) |
+| **Application** | REST Controllers, Service Layer | Business Logic & Validation | ![Spring](https://img.shields.io/badge/-Spring_Boot-6DB33F?style=flat-square&logo=springboot) |
+| **AI/ML** | Gemini AI Integration | Content Filtering & Analysis | ![Gemini](https://img.shields.io/badge/-Gemini_AI-4285F4?style=flat-square&logo=google) |
+| **Data** | Repositories, Models, Aggregation | Data Persistence & Queries | ![MongoDB](https://img.shields.io/badge/-MongoDB-4EA94B?style=flat-square&logo=mongodb) |
+| **Security** | JWT, Encryption, OTP | Authentication & Authorization | ![JWT](https://img.shields.io/badge/-JWT-000000?style=flat-square&logo=jsonwebtokens) |
+
+</div>
+
+---
+
+### 🔐 **Security Architecture**
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+**🛡️ Authentication**
+
+```typescript
+// JWT Flow
+Login → Validate
+  ↓
+Generate Token
+  ↓
+Store in Client
+  ↓
+Attach to Requests
+  ↓
+Verify on Server
+```
+
+![JWT](https://img.shields.io/badge/Method-JWT-black?style=flat-square&logo=jsonwebtokens)
+
+</td>
+<td width="33%" align="center">
+
+**🔒 Data Privacy**
+
+```python
+# Anonymization
+feedback = {
+  'content': encrypted,
+  'student_id': null,
+  'timestamp': hashed,
+  'ip_address': removed
+}
+```
+
+![Privacy](https://img.shields.io/badge/Level-Maximum-success?style=flat-square&logo=shieldsdotio)
+
+</td>
+<td width="33%" align="center">
+
+**📧 OTP System**
+
+```java
+// Email Verification
+Register → Send OTP
+  ↓
+Enter Code
+  ↓
+Verify Match
+  ↓
+Activate Account
+```
+
+![OTP](https://img.shields.io/badge/Expiry-5_min-red?style=flat-square&logo=clockify)
+
+</td>
+</tr>
+</table>
+
+---
+
+### 📊 **Database Schema Design**
+
+<details>
+<summary><b>Click to view Collections Schema</b></summary>
+
+```javascript
+// 👨‍🎓 student-login Collection
+{
+  "_id": ObjectId,
+  "name": String,
+  "email": String (unique, indexed),
+  "password": String (bcrypt hashed),
+  "rollNumber": String,
+  "department": String,
+  "course": String,
+  "semester": Number,
+  "class": String,
+  "isVerified": Boolean,
+  "createdAt": Date,
+  "lastLogin": Date
+}
+
+// 📝 feedback Collection
+{
+  "_id": ObjectId,
+  "subject": String (indexed),
+  "courseCode": String,
+  "faculty": String (indexed),
+  "studentEmail": String (anonymized),
+  "ratings": {
+    "punctual": String,
+    "clarity": Number (1-5),
+    "engaging": String,
+    "pace": String,
+    "satisfaction": Number (1-5)
+  },
+  "comments": String (AI-validated),
+  "aiValidation": {
+    "approved": Boolean,
+    "timestamp": Date,
+    "suggestions": Array
+  },
+  "submittedAt": Date (indexed),
+  "semester": String
+}
+
+// 👨‍🏫 faculty Collection
+{
+  "_id": ObjectId,
+  "facultyID": String (unique, indexed),
+  "fullName": String,
+  "email": String (unique),
+  "department": String (indexed),
+  "departmentType": String,
+  "subjects": Array,
+  "joiningDate": Date,
+  "isActive": Boolean
+}
+
+// 🏛️ departments Collection
+{
+  "_id": ObjectId,
+  "departmentName": String (indexed),
+  "departmentType": String,
+  "classes": [{
+    "className": String,
+    "semester": Number,
+    "subjects": [{
+      "subjectName": String,
+      "subjectCode": String,
+      "faculty": String,
+      "credits": Number
+    }]
+  }]
+}
+
+// 📢 notices Collection
+{
+  "_id": ObjectId,
+  "title": String,
+  "content": String,
+  "targetAudience": Array,
+  "priority": String,
+  "createdBy": String,
+  "createdAt": Date,
+  "expiresAt": Date,
+  "isActive": Boolean
+}
+```
+
+**Indexes for Performance:**
+- `feedback.faculty` + `feedback.subject` (compound index)
+- `feedback.submittedAt` (descending)
+- `student-login.email` (unique)
+- `faculty.facultyID` (unique)
+
+</details>
+
+---
 
 ### Prerequisites
 
