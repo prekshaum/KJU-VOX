@@ -799,13 +799,25 @@ kjc-vox/
 
 ---
 
-#OUTPUT SCREENSHOTS
+# OUTPUT SCREENSHOTS
 ## Admin Dashboards
 <img width="1908" height="816" alt="Screenshot 2025-12-11 231324" src="https://github.com/user-attachments/assets/2ab80e25-9084-42a7-9d0b-a9328789b8d7" />
-##Course Assigned Subjects
+## Course Assigned Subjects
 
 <img width="1903" height="832" alt="Screenshot 2025-12-11 231204" src="https://github.com/user-attachments/assets/27c521ab-b922-4b25-bf61-5ffb2cf8a8fc" />
 
+## Subject Feedback Analysis Page(1)
+<img width="1582" height="898" alt="Screenshot 2025-12-11 231223" src="https://github.com/user-attachments/assets/cb735b67-4464-445f-b6c0-dc3ec76f4d6b" />
+
+## Subject Feedback Analysis Page(2)
+<img width="1294" height="731" alt="Screenshot 2025-12-11 231237" src="https://github.com/user-attachments/assets/1e1bd8f1-ac2e-41f9-90cb-cb9ee429d81e" />
+
+## AI feedback Validation page ( with negative feedback)
+<img width="1309" height="703" alt="Screenshot 2025-12-11 231550" src="https://github.com/user-attachments/assets/b27b20a0-a297-45b8-b5bc-27511a474ff0" />
+
+## AI feedback Validation (with positive feedback)
+
+<img width="1393" height="787" alt="Screenshot 2025-12-11 231618" src="https://github.com/user-attachments/assets/049294ed-d824-435f-918a-c2e3fc84518a" />
 
 
 ## 🎯 User Workflows
