@@ -14,7 +14,7 @@ import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 
 public class MongoUtil {
     private static final String CONNECTION_STRING = "user your mongo URL";
-    private static final String DB_NAME = "kjc_vox_portal";
+    private static final String DB_NAME = "your db name here";
     private static MongoClient client;
     private static MongoDatabase database;
 
