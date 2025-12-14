@@ -8,7 +8,7 @@ import java.util.Properties;
 
 public class EmailUtil {
     private static final String from = "abiprojectsworking@gmail.com";
-    private static final String password = "dscnsvpboxcerdif";
+    private static final String password = "your email password";
 
     public static void sendCodeAndPassword(String to, String name, String code, String passwordPlain) throws MessagingException {
         Properties props = new Properties();
