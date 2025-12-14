@@ -64,10 +64,10 @@
 
 ```mermaid
 graph LR
-    A[👨‍🎓 Student] -->|Submit| B[🤖 AI Validator]
-    B -->|Approved| C[🗄️ Database]
-    C -->|Analytics| D[👨‍🏫 Faculty]
-    D -->|Insights| E[📈 Improve]
+    A[Student] -->|Submit| B[AI Validator]
+    B -->|Approved| C[Database]
+    C -->|Analytics| D[Faculty]
+    D -->|Insights| E[Improve]
     
     style B fill:#4285F4,stroke:#3367D6,stroke-width:2px
     style C fill:#4EA94B,stroke:#3D8B40,stroke-width:2px
@@ -143,39 +143,42 @@ export const environment = {
 
 ```mermaid
 flowchart TB
-    subgraph Frontend["🎨 Frontend - Angular"]
+    subgraph Frontend[Frontend - Angular]
         A1[Student Portal]
         A2[Faculty Dashboard]
         A3[Admin Panel]
     end
     
-    subgraph Backend["⚙️ Backend - Spring Boot"]
+    subgraph Backend[Backend - Spring Boot]
         B1[REST API]
         B2[JWT Auth]
         B3[Email Service]
     end
     
-    subgraph AI["🤖 AI Layer"]
+    subgraph AI[AI Layer]
         C1[Gemini API]
         C2[Content Filter]
         C3[Sentiment Analysis]
     end
     
-    subgraph Database["💾 Database"]
+    subgraph Database[Database]
         D1[(MongoDB Atlas)]
     end
     
-    A1 & A2 & A3 --> B1
+    A1 --> B1
+    A2 --> B1
+    A3 --> B1
     B1 --> B2
     B1 --> C1
-    C1 --> C2 & C3
+    C1 --> C2
+    C1 --> C3
     C1 --> D1
     B3 -.-> A1
     
-    style Frontend fill:#DD0031,stroke:#C50028,color:#fff
-    style Backend fill:#6DB33F,stroke:#5A9A2F,color:#fff
-    style AI fill:#4285F4,stroke:#3367D6,color:#fff
-    style Database fill:#4EA94B,stroke:#3D8B40,color:#fff
+    style Frontend fill:#DD0031,stroke:#C50028,stroke-width:2px
+    style Backend fill:#6DB33F,stroke:#5A9A2F,stroke-width:2px
+    style AI fill:#4285F4,stroke:#3367D6,stroke-width:2px
+    style Database fill:#4EA94B,stroke:#3D8B40,stroke-width:2px
 ```
 
 </div>
@@ -268,20 +271,17 @@ sequenceDiagram
     UI->>API: POST /api/feedback
     API->>AI: Validate Content
     
-    alt ❌ Inappropriate
+    alt Inappropriate
         AI-->>API: Rejected + Suggestions
         API-->>UI: Show Suggestions
         UI-->>S: Revise Feedback
-    else ✅ Approved
+    else Approved
         AI-->>API: Content OK
         API->>DB: Store Anonymously
         DB-->>API: Success
         API-->>UI: Confirmation
         UI-->>S: Thank You!
     end
-    
-    style AI fill:#4285F4,color:#fff
-    style DB fill:#4EA94B,color:#fff
 ```
 
 </div>
